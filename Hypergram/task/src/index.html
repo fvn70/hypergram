@@ -6,11 +6,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas>
-    </canvas>
+    <canvas id="canvas"></canvas>
     <section class="controls">
         <label for="file-input" id="input">Upload file</label>
-        <input id="file-input" type="file" accept="image/png, image/jpeg" style="opacity: 0">
+        <input id="file-input" type="file" accept="image/*" style="opacity: 0">
         <br>
         <label for="brightness" class="contr-label">Brightness</label>
         <input id="brightness" type="range">
@@ -23,5 +22,6 @@
         <br>
         <button id="save-button" type="button">Save image</button>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
