@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    font-family: sans-serif;
+}
+
+canvas {
+    border: 3px solid;
+    width: 50vw;
+    height: 70vh;
+    margin: 2vw;
+}
+
+.controls {
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+    margin: 2vw;
+    padding: 40px 10px 40px 10px;
+}
+
+#input,
+#save-button {
+    background-color: rgba(205, 92, 92, 0.7);
+    text-transform: uppercase;
+    border: 2px solid dimgrey;
+    padding: 2px 10px 2px 10px;
+}
+
+#save-button {
+    background-color: rgba(72, 61, 139, 0.5);
+}
+
+.contr-label {
+    font-size: .8em;
+    font-weight: bold;
+}
