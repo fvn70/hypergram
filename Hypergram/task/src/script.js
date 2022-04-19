@@ -10,6 +10,16 @@ const fileInput = document.getElementById('file-input');
 const brightness = document.getElementById('brightness');
 const contrast = document.getElementById('contrast');
 const transparent = document.getElementById('transparent');
+const saveBtn = document.getElementById('save-button');
+
+saveBtn.addEventListener('click', async () => {
+    let tmpLink = document.createElement('a');
+    tmpLink.download = "result.png";
+    tmpLink.href = canvas.toDataURL();
+    tmpLink.click();
+    // await sleep(1000);
+    // tmpLink.delete;
+});
 
 fileInput.addEventListener('change', (ev) => {
     if (ev.target.files) {
